@@ -1,4 +1,4 @@
-# HTML Practical
+# Student Attendance
 
 ## Simple Student Attendance
 
