@@ -1,0 +1,9 @@
+﻿Generated model file: StudentDataModel.edmx.
+Loading metadata from the database took 00:00:01.1122444.
+Generating the model took 00:00:02.3974811.
+Generated model file: StudentDataModel.edmx.
+Loading metadata from the database took 00:00:00.9619362.
+Generating the model took 00:00:01.7270290.
+Generated model file: StudentDataModel.edmx.
+Loading metadata from the database took 00:00:00.8477665.
+Generating the model took 00:00:01.6227510.

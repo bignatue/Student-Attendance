@@ -1,0 +1,22 @@
+﻿body {
+}
+
+
+.navbar {
+    padding: 5px 10px;
+}
+.navbar-default {
+    background-color: #8b1112 !important;
+    border-color: #8b1112 !important;
+}
+
+.btn-primary, .bg-primary {
+    color: #fff;
+    background-color: #8b1112 !important;
+    border-color: #8b1112 !important;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: #ff0000;
+    color: #fff;
+}

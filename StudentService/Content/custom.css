@@ -1,0 +1,63 @@
+﻿.container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Headers Section */
+.navbar {
+    padding:5px!important;
+}
+#btnLogOff {
+    padding: 14px 20px 14px 10px;
+}
+
+/* Sign and Register Form*/
+.form-signin {
+    margin: 10% auto;
+}
+.form-register {
+    margin: 5% auto;
+}
+.signregister-logo > img {
+    width: 80px;
+}
+
+/* Tables */
+.table {
+    margin-bottom: 10px;
+}
+
+#divError {
+    margin: 10px 0;
+}
+/** Colors */
+.navbar-default {
+    background-color: #8b1112 !important;
+    border-color: #8b1112 !important;
+}
+
+.btn-brown {
+    color: #fff;
+    background-color: #8b1112 !important;
+    border-color: #8b1112 !important;
+}
+.btn-brown:hover, .btn-brown:focus {
+    background: #ff0000;
+    color: #fff;
+}
+
+.text-white {
+    color: #ffffff!important;
+}
+
+.text-secondary {
+    color: #c3c3c3 !important;
+}
+.text-secondary:hover {
+    color: #ffffff !important;
+}
+
+/* Margins */
+.ml-10 {
+    margin-left: 10px;
+}

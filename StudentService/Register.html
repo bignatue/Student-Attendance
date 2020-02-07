@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="img/cbc-logo.png">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/custom.css" rel="stylesheet" /> 
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="form-register">
+                    <div class="signregister-logo text-center">
+                        <img src="Img/logo.png" />
+                    </div>
+                    <h4 class="text-center">Register New User</h4>
+                    <div class="form-group">
+                        <label for="txtEmail">Email Address</label>
+                        <input type="text" class="form-control" id="txtEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtPassword">Password</label>
+                        <input type="password" class="form-control" id="txtPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="txtConfirmPassword">Confirm Password</label>
+                        <input type="password" class="form-control" id="txtConfirmPassword" placeholder="Confirm Password">
+                    </div>
+                    <button id="btnRegister" type="submit" class="btn btn-brown btn-block mb-1">Register</button>
+
+                    <!-- MODAL -->
+                    <div class="modal fade" tabindex="-1" role="dialog" id="successModal" data-keyboard="false" data-backdrop="static">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4><strong>Success</strong></h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h4>Registration Successful</h4>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" data-dismiss="modal" class="btn btn-brown pl-1 pr-1">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="divError" class="alert alert-danger collapse">
+                        <a href="#" id="linkClose" class="close">&times;</a>
+                        <div id="divErrorText"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/register.js"></script>
+</body>
+</html>

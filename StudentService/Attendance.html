@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="img/cbc-logo.png">
+    <title>Attendance | StudentService Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/custom.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="Img/logo.png" width="32" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="Attendance.html" class="text-white active">ATTENDANCE</a></li>
+                    <li><a href="View.html" class="text-secondary">VIEW</a></li>
+                    <li><a href="Students.html" class="text-secondary">STUDENT</a></li>
+                    <li><a href="TestPage.html" class="text-secondary">TEST PAGE</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a id="spanUsername" class="text-white"></a>
+                    </li>
+                    <li>
+                        <button type="button" id="btnLogOff" class="btn btn-link text-white">Log Off</button>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Filters -->
+        <div class="row">
+            <div class="col-md-8">
+                <h4>ATTENDANCE</h4>
+                <p>Date: <span id="dateNow"></span></p>
+            </div>
+            <!--<div class="col-md-2">
+                <label>Filter By Class</label>
+                <select class="form-control input-sm" id="country">
+                    <option value="">All Class</option>
+                    <option>SQL</option>
+                    <option>Oracle</option>
+                    <option>C Sharp</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label>Filter By Course</label>
+                <select class="form-control input-sm" id="country">
+                    <option value="">All Course</option>
+                    <option>SE</option>
+                    <option>DBA</option>
+                </select>
+            </div>-->
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-sm table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Student Id</th>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students"></tbody>
+                </table>
+                <div class="row">
+                    <div class="col-md-2 col-lg-offset-10">
+                        <button id="btnMark" class="btn btn-sm btn-brown btn-block" type="submit">Save</button>
+                    </div>
+                    <!-- SUCCESS MESSAGE -->
+                    <div id="divSuccess" class="alert alert-info collapse">
+                        <button id="successClose" type="button" class="close">&times;</button>
+                        <div id="divSuccessMessage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- SAVE STUDENT ATTENDANCE -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="successModal" data-keyboard="false" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4><strong>Data Updated</strong></h4>
+                    </div>
+                    <div class="modal-body">
+                        <h4>Data was succefully added!</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-dismiss="modal" class="btn btn-sm btn-brown">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ERROR -->
+        <div id="divError" class="alert alert-danger collapse">
+            <a href="#" id="linkClose" class="close">&times;</a>
+            <div id="divErrorText"></div>
+        </div>
+
+    </div>
+
+    <script src="Scripts/jquery-3.4.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/attendance.js"></script>
+    <script src="Scripts/date.js"></script>
+</body>
+</html>
